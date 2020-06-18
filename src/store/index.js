@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from "redux";
 import rootReducer from "../reducers";
 import thunk from "redux-thunk";
-import { composeWithDevTools } from 'redux-devtools-extension'
+// import { composeWithDevTools } from 'redux-devtools-extension'
 // import { CONSTANTS } from "../actions";
 
 // const confirmDeleteTodo = (store) => (next) => (action) => {
@@ -16,17 +16,18 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 //   }
 // }
 
-const composeEnhancers = composeWithDevTools({
-  name: 'Redux',
-  realtime: true,
-  trace: true,
-  tracelimit: 20
-})
+// const composeEnhancers = composeWithDevTools({
+//   name: 'Redux',
+//   realtime: true,
+//   trace: true,
+//   tracelimit: 20
+// })
 
 export default () => {
   let store = createStore(
     rootReducer,
-    composeEnhancers(applyMiddleware(thunk))
+    // composeEnhancers(applyMiddleware(thunk))
+    applyMiddleware(thunk)
   )
   return { store }
 };

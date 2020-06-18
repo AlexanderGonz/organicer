@@ -134,7 +134,7 @@ const CreateUserDialog = ({open, profile, onClose, user, dispatch}) => {
         margin="dense"
         id="phone"
         label="Telefono"
-        type="text"
+        type="number"
         fullWidth
         defaultValue={profile ? user.phone : ''}
         inputRef={phone}

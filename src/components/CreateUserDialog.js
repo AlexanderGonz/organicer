@@ -11,7 +11,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import axios from 'axios';
 import { serverUrl } from '../configs/serverUrl';
-import { setLogin } from '../actions'
+// import { setLogin } from '../actions'
 
 const Alert = (props) => {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -23,7 +23,7 @@ const CreateUserDialog = ({open, profile, onClose, user, dispatch}) => {
   const lastname = React.createRef()
   const phone = React.createRef()
   const pass = React.createRef()
-  const newPass = React.createRef()
+  // const newPass = React.createRef()
 
   const [openSnack, setOpenSnack] = useState(false)
   const [msgSnack, setMsgSnack] = useState('')

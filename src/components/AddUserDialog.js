@@ -21,10 +21,10 @@ const Alert = (props) => {
 }
 
 const AddUserDialog = ({open, onCloseDialog, usersCompany, dispatch}) =>{
-  const [scroll, setScroll] = React.useState('paper');
+  const [scroll] = React.useState('paper');
   const [openSnack, setOpenSnack] = useState(false)
-  const [msgSnack, setMsgSnack] = useState('')
-  const [severitySnack, setSeveritySnack] = useState('')
+  const [msgSnack] = useState('')
+  const [severitySnack] = useState('')
 
   const handleClose = () => {
     onCloseDialog()

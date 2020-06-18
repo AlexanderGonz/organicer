@@ -16,6 +16,7 @@ import Container from '@material-ui/core/Container';
 import { connect } from "react-redux";
 import { setLogin } from "../actions"
 import axios from "axios"
+import { serverUrl } from '../configs/serverUrl';
 
 
 const Alert = (props) => {
@@ -71,7 +72,7 @@ const LogIn = ({ history, isAuth, dispatch }) => {
   const handleSubmit = (e) => {
     e.preventDefault()  
 
-    axios.post('http://localhost:4000/auth', {
+    axios.post(serverUrl + '/auth', {
       login: {
         mail: email,
         pass: pass

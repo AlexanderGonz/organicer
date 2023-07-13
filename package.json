@@ -9,7 +9,7 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "axios": "^0.19.2",
     "install": "^0.12.2",
-    "npm": "^6.8.0",
+    "npm": "^6.14.18",
     "react": "^16.8.3",
     "react-beautiful-dnd": "^10.1.0",
     "react-dom": "^16.8.3",

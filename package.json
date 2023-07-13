@@ -43,7 +43,7 @@
   ],
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "redux-devtools-extension": "^2.13.8"
   }
 }
